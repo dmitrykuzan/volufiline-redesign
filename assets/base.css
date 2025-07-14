@@ -3031,8 +3031,6 @@ details[open] > .header__submenu {
 
 @media screen and (min-width: 990px) {
   .header__inline-menu {
-    /* display: block; */
-    width: 100%;
     align-items: center;
     justify-content: start;
     display: flex;
