@@ -46,7 +46,6 @@
     "header": {
       "type": "header",
       "settings": {
-        "link": "shopify://products/melatonic-60ml",
         "logo_position": "middle-left",
         "mobile_logo_position": "left",
         "menu": "main-menu",
