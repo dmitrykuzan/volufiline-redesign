@@ -1,0 +1,64 @@
+{{ 'banner-melatonic.css' | asset_url | stylesheet_tag }}
+
+<section class="banner-melatonic-image page-width">
+  <div class="banner-melatonic-image__wrapper">
+    <div class="banner-melatonic-image__blur">
+      <span></span>
+    </div>
+    <div class="banner-melatonic-image__image">
+      <img
+        src="{{ 'banner-only-image.jpg' | asset_url }}"
+        width="1600"
+        height="600"
+        alt="Melatonic banner"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="banner-melatonic-image__image--mobile">
+      <img
+        src="{{ 'banner-only-image-mobile.jpg' | asset_url }}"
+        width="335"
+        height="416"
+        alt="Melatonic banner"
+        loading="lazy"
+      >
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const wrapper = document.querySelector('.banner-melatonic-image__wrapper');
+    const blur = document.querySelector('.banner-melatonic-image__blur');
+
+    if (wrapper && blur) {
+      wrapper.addEventListener('mouseenter', () => {
+        blur.classList.add('show');
+      });
+
+      wrapper.addEventListener('mouseleave', () => {
+        blur.classList.remove('show');
+      });
+
+      wrapper.addEventListener('mousemove', (e) => {
+        const rect = wrapper.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        blur.style.transform = `translate(${x - 150}px, ${y - 150}px)`;
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Banner only image",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Banner only image"
+    }
+  ]
+}
+{% endschema %}

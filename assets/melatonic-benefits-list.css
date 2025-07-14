@@ -1,0 +1,165 @@
+.melatonic-benefits-list {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.melatonic-benefits-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.melatonic-benefits-list__title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: center;
+  margin: initial;
+}
+
+.melatonic-benefits-list__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+   max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.melatonic-benefits-list__image {
+  display: flex;
+ 
+
+  img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+.melatonic-benefits-list__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  padding: initial;
+  margin: initial;
+}
+
+.melatonic-benefits-list__item {
+  display: flex;
+  gap: 2rem;
+
+  span {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #808080;
+    line-height: 100%;
+    padding-top: 0.4rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 166%;
+    margin: initial;
+  }
+}
+
+.melatonic-benefits-list__link {
+  display: flex
+;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 133%;
+    outline: none;
+    border: initial;
+    min-height: 5rem;
+    background: #000;
+    width: 100%;
+    max-width: 41rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: initial;
+    margin-top: 3rem;
+    transition: background-color 0.3s linear, color 0.3s linear, border 0.3s linear;
+}
+
+@media screen and (min-width: 1024px) {
+  .melatonic-benefits-list {
+    margin-bottom: 10rem;
+  }
+
+  .melatonic-benefits-list__wrapper {
+    gap: 5rem;
+  }
+
+ .melatonic-benefits-list__body {
+  flex-direction: row;
+  max-width: initial;
+  gap: 5rem;
+ }
+
+ .melatonic-benefits-list__title {
+  font-size: 3.8rem;
+ }
+
+ .melatonic-benefits-list__image {
+  max-width: 42rem;
+ }
+
+ .melatonic-benefits-list__item {
+
+  span {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+ }
+
+ .melatonic-benefits-list__link {
+  margin-left: initial;
+  max-width: 31rem;
+ }
+}
+
+@media screen and (min-width: 1480px) {
+ .melatonic-benefits-list__title {
+  font-size: 4.8rem;
+ }
+
+ .melatonic-benefits-list__body {
+  gap: 10rem;
+ }
+
+ .melatonic-benefits-list__list {
+  max-width: 60rem;
+ }
+
+  .melatonic-benefits-list__item {
+    span {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+ .melatonic-benefits-list__image {
+  max-width: 60rem;
+ }
+
+}
+

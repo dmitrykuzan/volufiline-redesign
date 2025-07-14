@@ -1,5 +1,16 @@
+.list-social__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  order: 3;
+}
+
+
+
 .list-social {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -18,8 +29,29 @@
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 1.1rem;
-  color: rgb(var(--color-foreground));
+  /* padding: 1.1rem; */
+  /* color: rgb(var(--color-foreground)); */
+  color: #67645E;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.list-social__link:hover {
+  .social-name {
+    text-decoration: underline;
+    color: #000;
+  }
+}
+
+.social-name {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 1023px) {
+  .social-name {
+      font-size: 1.8rem;
+    }
 }
 
 .utility-bar .list-social__link {

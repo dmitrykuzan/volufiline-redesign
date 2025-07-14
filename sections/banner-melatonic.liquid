@@ -1,0 +1,65 @@
+{{ 'banner-melatonic.css' | asset_url | stylesheet_tag }}
+
+<section class="banner-melatonic page-width">
+  <div class="banner-melatonic__wrapper">
+    <div class="banner-melatonic__image">
+      <img
+        src="{{ 'banner-melatonic-img.jpg' | asset_url }}"
+        width="880"
+        height="660"
+        alt="Melatonic bottle"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="banner-melatonic__content">
+      <div class="banner-melatonic__text">
+        <h2 class="banner-melatonic__title section-title-melatonic">melatonic 60ml</h2>
+        <div class="banner-melatonic__price">
+          <span class="text">$29 <span class="old-price">$39</span></span>
+          <span class="label">25% OFF</span>
+        </div>
+      </div>
+      <p class="banner-melatonic__description">
+        Revive thinning hair with this 60ml bottle of Melatonic—a topical hair growth solution powered by melatonin and
+        naturally strengthening botanicals.
+      </p>
+
+      {% for block in section.blocks %}
+        {% if block.type == 'product' and block.settings.product %}
+          {% assign product = block.settings.product %}
+          <a class="banner-melatonic__link button-dark" href="{{ product.url }}">BUY MELATONIC</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Banner with text",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product link",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner with text",
+      "blocks": [
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

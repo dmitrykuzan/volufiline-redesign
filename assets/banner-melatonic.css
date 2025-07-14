@@ -1,0 +1,380 @@
+.banner-melatonic {
+  margin-top: 2rem;
+}
+
+.banner-melatonic__wrapper {
+  overflow: hidden;
+  background-color: #F1F0ED;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+
+
+.banner-melatonic__image {
+  height: 27rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+.banner-melatonic__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.banner-melatonic__text {
+  display:flex; 
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.banner-melatonic__title {
+  margin: initial;
+  text-align: center;
+  font-size: 2.8rem;
+  line-height: 120%;
+}
+
+.banner-melatonic__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .text {
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 120%;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    min-width: 9rem;
+    height: 3rem;
+    border-radius: 5rem;
+    background-color: #66645E;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 120%;
+  }
+}
+
+.banner-melatonic__description {
+  margin: initial;
+  line-height: 166%;
+  text-align: center;
+}
+
+.banner-melatonic__link {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (min-width: 767px) {
+  .banner-melatonic__wrapper {
+    flex-direction: row;
+  }
+
+  .banner-melatonic__image {
+    height: auto;
+    width: 100%;
+    max-width: 30rem;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 830px) {
+   .banner-melatonic__image {
+    max-width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-melatonic {
+    margin-top: 7rem;
+  }
+
+  .banner-melatonic__wrapper {
+    min-height: 42rem;
+    border-radius: 3rem;
+  }
+
+ .banner-melatonic__image {
+    width: 50%;
+    max-width: initial;
+  }
+
+  .banner-melatonic__content {
+    width: 55%;
+    margin-top:  auto;
+  }
+
+  .banner-melatonic__title {
+    font-size: 3.2rem;
+    text-align: start;
+  }
+
+  .banner-melatonic__price {
+    justify-content: flex-start;
+
+    .text {
+      font-size: 3.4rem;
+    }
+
+    .label {
+      font-size: 1.8rem;
+    }
+  }
+
+  .banner-melatonic__description {
+    text-align: start;
+    max-width: 42rem;
+  }
+
+  .banner-melatonic__link {
+    margin-left: initial;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .banner-melatonic__wrapper {
+    min-height: 55rem;
+  }
+
+  .banner-melatonic__title {
+    font-size: 5rem;
+  }
+  
+  .banner-melatonic__content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+   .banner-melatonic__image {
+    width: 50%;
+    max-width: initial;
+  }
+}
+
+/* banner with image */
+
+.banner-melatonic-image {
+  margin-top: 2rem;
+}
+
+.banner-melatonic-image__image {
+  display: none; 
+}
+
+.banner-melatonic-image__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-melatonic-image__blur {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  z-index: 1;
+  filter: blur(4rem);
+  mix-blend-mode: overlay;
+  will-change: transform;
+  transition: transform 0.2s linear, opacity 0.5s linear;
+  pointer-events: none;
+}
+
+.banner-melatonic-image__blur.show {
+  opacity: 1;
+}
+
+.banner-melatonic-image__image, .banner-melatonic-image__image--mobile {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
+
+.banner-melatonic-image__image--mobile {
+  display: flex;
+  max-height: 45rem;
+}
+
+@media screen and (min-width: 575px) {
+  .banner-melatonic-image__image--mobile {
+    display: none;
+  }
+
+  .banner-melatonic-image__image {
+    display: flex; 
+    min-height: 45rem;
+    max-height: 65rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-melatonic-image {
+    margin-top: 7rem;
+  }
+
+  .banner-melatonic-image__image, .banner-melatonic-image__image--mobile {
+    img {
+      border-radius: 3rem;
+    }
+  }
+}
+
+/* banner with marquee */
+
+.banner-melatonic__content--marquee {
+  position: relative;
+}
+
+.banner-melatonic__wrapper-marquee {
+  /* max-height: 66rem; */
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-melatonic__wrapper-marquee {
+     flex-direction: row;
+     max-height: 52rem;
+  }
+
+  .banner-melatonic__content--marquee {
+    padding-right: 13rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .banner-melatonic__wrapper-marquee {
+     max-height: 60rem;
+  }
+
+  .banner-melatonic__content--marquee {
+    padding-right: 20rem;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .banner-melatonic__wrapper-marquee {
+     max-height: 65rem;
+  }
+}
+
+.banner-melatonic__image-marquee {
+  height: 40rem;
+
+  img {
+    object-position: top;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .banner-melatonic__image-marquee {
+    max-width: initial;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-melatonic__image-marquee {
+    height: auto;
+  }
+}
+
+/* marquee text */
+
+
+
+/* ticker text */
+.ticker-text__wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+}
+
+@media screen and (min-width: 1023px) {
+ .ticker-text__wrapper {
+    height: 9rem;
+    top: 0rem; 
+    position: absolute;
+    transform: rotate(-90deg);
+    right: -47rem;
+    width: 100rem; 
+    margin-left: initial;
+  }
+}
+
+
+.ticker-text__list {
+  display: inline-block;
+  animation: marquee 50s linear infinite;
+}
+
+.ticker-text__item {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: inline-block;
+  font-size: 3.2rem;
+  line-height: 125%;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1023px) {
+ .ticker-text__item {
+   font-size: 5rem;
+  }
+}
+
+.ticker-text__item-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 50s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes swap {
+  0%, 50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}

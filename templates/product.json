@@ -12,17 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -38,33 +27,59 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
+        "title": {
+          "type": "title",
+          "settings": {}
         },
         "description": {
           "type": "description",
           "settings": {}
         },
-        "share": {
-          "type": "share",
+        "buy_buttons": {
+          "type": "buy_buttons",
           "settings": {
-            "share_label": "Share"
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "collapsible_tab_HRKqfG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "BENEFITS",
+            "icon": "none",
+            "content": "<ul><li>Powered by melatonin, a science backed ingredient for hair regrowth</li><li>Promotes visibly fuller, thicker hair</li><li>Calms and nourishes the scalp</li><li>Made with vegan, non-greasy oils for lightweight moisture</li><li>Boosts natural hair restoration without harsh chemicals or buildup</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_GXA77C": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "APPLICATION",
+            "icon": "none",
+            "content": "<p>Melatonic is a lightweight serum designed for easy, targeted use. </p><ul><li>Apply 2-3 drops directly to the scalp, ideally at night.</li><li>Gently massage in with fingertips for even absorption.</li><li>Use consistently on clean, dry scalp for best results.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_AUEiKB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "KEY INGREDIENTS",
+            "icon": "none",
+            "content": "<p>MELATONIN — a powerful antioxidant that supports the hair growth cycle, soothes the scalp, and helps reduce shedding for fuller, thicker hair over time<br/>ARGAN OIL — rich in fatty acids and vitamin E, it deeply nourishes and hydrates the scalp while adding shine and softness to hair strands<br/>BIOTIN — a B-vitamin that helps strengthen hair at the root, supporting healthier growth and improving hair density<br/>VITAMIN C — boosts collagen production to help strengthen the scalp and improve the overall structure of growing hair.<br/>ALMOND OIL — packed with magnesium and proteins, it helps smooth hair texture, reduce breakage, and support a healthy scalp environment.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "vendor",
-        "title",
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
+        "title",
         "description",
-        "share"
+        "buy_buttons",
+        "collapsible_tab_HRKqfG",
+        "collapsible_tab_GXA77C",
+        "collapsible_tab_AUEiKB"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -78,12 +93,228 @@
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 24,
+        "padding_bottom": 0
       }
+    },
+    "banner_result_r7bNhR": {
+      "type": "banner-result",
+      "name": "Banner result",
+      "settings": {}
+    },
+    "banner_compound_43dE8r": {
+      "type": "banner-compound",
+      "name": "Banner compound",
+      "settings": {}
+    },
+    "application_slider_CExgYL": {
+      "type": "application-slider",
+      "name": "Application-slider",
+      "settings": {}
+    },
+    "before_after_slider_product_tryxX8": {
+      "type": "before-after-slider-product",
+      "blocks": {
+        "product_LbcdEC": {
+          "type": "product",
+          "settings": {
+            "product": "melatonic-60ml"
+          }
+        }
+      },
+      "block_order": [
+        "product_LbcdEC"
+      ],
+      "name": "Before After Slider Product",
+      "settings": {}
+    },
+    "faq_with_image_h6L8VQ": {
+      "type": "faq-with-image",
+      "blocks": {
+        "faq_item_Kif3d6": {
+          "type": "faq_item",
+          "settings": {
+            "title": "How long does it take to see results?",
+            "text": "<p>Most users notice reduced shedding and early signs of regrowth (like baby hairs) within 2–4 weeks. Fuller, visibly denser hair can take 6–8 weeks with consistent use.</p>"
+          }
+        },
+        "faq_item_wpkMqj": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Is Melatonic permanent?",
+            "text": "<p>While Melatonic supports long-term hair health, results are maintained with ongoing use. Like most topical treatments, hair may gradually revert if usage stops.</p><p></p>"
+          }
+        },
+        "faq_item_iC3Wfb": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Does topical melatonin make you tired?",
+            "text": "<p>Nope — applying melatonin to the scalp doesn’t cause drowsiness. It stays local to the skin and doesn’t affect your sleep cycle.<br/><br/></p>"
+          }
+        },
+        "faq_item_c7eBCh": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Is it safe for sensitive scalps?",
+            "text": "<p>Melatonic is formulated to be gentle and non-irritating. However, if you have a history of scalp sensitivity, we recommend patch testing before full use.<br/><br/></p>"
+          }
+        },
+        "faq_item_fRXGzV": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Does it really work?",
+            "text": "<p>Melatonic combines topical melatonin with proven plant extracts to support hair density, reduce shedding, and stimulate regrowth — backed by real customer results.<br/><br/></p>"
+          }
+        },
+        "faq_item_iwTWnq": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Will it make my hair greasy?",
+            "text": "<p>No. Melatonic is fast-absorbing and water-based — no residue and no greasy feel.<br/><br/></p>"
+          }
+        },
+        "faq_item_9FHWqn": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Does it work for men and women?",
+            "text": "<p>Yes, it’s designed to be effective and safe for all genders dealing with hair thinning or loss.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_Kif3d6",
+        "faq_item_wpkMqj",
+        "faq_item_iC3Wfb",
+        "faq_item_c7eBCh",
+        "faq_item_fRXGzV",
+        "faq_item_iwTWnq",
+        "faq_item_9FHWqn"
+      ],
+      "name": "FAQ Section (with image)",
+      "settings": {}
+    },
+    "custom_review_GfAPgy": {
+      "type": "custom-review",
+      "blocks": {
+        "list_item_igrTjp": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Ava",
+            "title_review": "Melatonic",
+            "review_date": "1 days ago",
+            "review_rating": 5,
+            "review_text": "<p>I’ve been dealing with hair thinning for a while, and after trying several products, I finally found one that actually made a difference. Within just a few weeks, I noticed less shedding in the shower and my hair started to feel fuller and healthier. It’s not a miracle overnight fix, but with consistent use, the results are noticeable and encouraging. If you’re struggling with thinning hair, this is definitely worth a try.</p>"
+          }
+        },
+        "list_item_yxc6Xm": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Liam",
+            "title_review": "Melatonic",
+            "review_date": "1 days ago",
+            "review_rating": 5,
+            "review_text": "<p>I’ve been dealing with hair thinning for a while, and after trying several products, I finally found one that actually made a difference. Within just a few weeks, I noticed less shedding in the shower and my hair started to feel fuller and healthier. It’s not a miracle overnight fix, but with consistent use, the results are noticeable and encouraging. If you’re struggling with thinning hair, this is definitely worth a try.</p>"
+          }
+        },
+        "list_item_JWE7N4": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Sophia",
+            "title_review": "Melatonic",
+            "review_date": "2 days ago",
+            "review_rating": 5,
+            "review_text": "<p>I have suffered from periodic hair loss primarily due to thryroid and perimenopause and have tried a multitude of products over the last 10 years. I have been using this product for about three months in conjuction with Nutrafol hair vitamins and have noticed a difference in the density and quality of my hair. I would recommend!</p>"
+          }
+        },
+        "list_item_taiAN9": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Ethan",
+            "title_review": "Melatonic",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>I’ve been using this serum for a little over two months now, and I’m starting to see a real difference. My hair feels thicker at the roots and looks a bit fuller overall. It’s very easy to use — just a few drops at night, and it doesn’t leave my hair greasy or heavy. You definitely have to be consistent and patient with it.</p>"
+          }
+        },
+        "list_item_iFbLb4": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Isabella",
+            "title_review": "Melatonic",
+            "review_date": "3 days ago",
+            "review_rating": 4,
+            "review_text": "<p>I’ve been using this hair growth serum for a few weeks now, applying it consistently once a day. The texture is light, it doesn’t leave any greasy feeling, and it absorbs pretty quickly. I’ve noticed less shedding during brushing and my scalp feels healthier overall. It’s still early to see big changes, but I do think the roots look a bit fuller than before.</p>"
+          }
+        },
+        "list_item_H7JdMP": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Noah",
+            "title_review": "Melatonic",
+            "review_date": "3 days ago",
+            "review_rating": 5,
+            "review_text": "<p>I’ve got super sensitive skin and was worried, but no irritation at all. Easy to apply and smells really mild.</p>"
+          }
+        },
+        "list_item_BGhddG": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Maya",
+            "title_review": "Melatonic • Hair Growth Solution",
+            "review_date": "3 days ago",
+            "review_rating": 4,
+            "review_text": "<p>Delivery was quick and the results have been surprising. I have baby hairs coming back after years of thinning.</p>"
+          }
+        },
+        "list_item_hPUWcy": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Owen",
+            "title_review": "Melatonic • Hair Growth Solution",
+            "review_date": "4 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Noticed a change in texture after 2 weeks. Hair looks less flat and feels stronger overall.</p>"
+          }
+        },
+        "list_item_CYDARr": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Layla",
+            "title_review": "Melatonic • Hair Growth Solution",
+            "review_date": "4 days ago",
+            "review_rating": 4,
+            "review_text": "<p>This actually works. My scalp doesn’t itch like it did with minoxidil, and my part line looks less wide.</p>"
+          }
+        },
+        "list_item_fwj6G7": {
+          "type": "list_item",
+          "settings": {
+            "name_customer": "Zoe",
+            "title_review": "Melatonic • Hair Growth Solution",
+            "review_date": "4 days ago",
+            "review_rating": 5,
+            "review_text": "<p>Didn’t expect much, but my shedding has cut down a lot. No greasy residue, which I appreciate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_igrTjp",
+        "list_item_yxc6Xm",
+        "list_item_JWE7N4",
+        "list_item_taiAN9",
+        "list_item_iFbLb4",
+        "list_item_H7JdMP",
+        "list_item_BGhddG",
+        "list_item_hPUWcy",
+        "list_item_CYDARr",
+        "list_item_fwj6G7"
+      ],
+      "name": "Custom Review List",
+      "settings": {}
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -103,6 +334,12 @@
   },
   "order": [
     "main",
+    "banner_result_r7bNhR",
+    "banner_compound_43dE8r",
+    "application_slider_CExgYL",
+    "before_after_slider_product_tryxX8",
+    "faq_with_image_h6L8VQ",
+    "custom_review_GfAPgy",
     "related-products"
   ]
 }
