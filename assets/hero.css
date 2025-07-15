@@ -1,5 +1,5 @@
 .hero {
-  margin-top: -8.9rem;
+ 
 }
 
 .hero__wrapper {
@@ -12,7 +12,7 @@
  padding-left: 1rem;
  padding-right: 1rem;
  padding-bottom: 2rem;
- padding-top: 12rem;
+ padding-top: 3rem;
 }
 
 
@@ -38,55 +38,35 @@
   display: flex;
 }
 
-.hero__logos {
-  display: inline-flex;
-  overflow: hidden;
-  width: calc(100% + 2rem);
-  margin-left: -1rem;
-  align-items: center;
-}
 
-.hero__logos-row {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  flex-shrink: 0;
-  padding-right: 5rem;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee-horizontal-left 24000ms linear infinite;
-}
 
-.hero__logo {
-  width: 100%;
-  max-width: 15rem;
-
-  svg {
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .hero__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 2rem;
   gap: 1.5rem;
-  max-width: 41rem;
+  box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(199, 199, 199, 0.01);
 }
 
 .hero__title {
   font-size: 3.2rem;
   line-height: 122%;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   margin: initial;
+  text-align: center;
 }
 
 .hero__subtitle {
   font-size: 1.4rem;
   line-height: 125%;
-  color: #fff;
+  color: #000;
   margin: initial;
+  text-align: center;
 }
 
 .hero__product-link {
@@ -94,8 +74,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  border: 0.2rem solid #fff;
+  color: #000;
+  border: 0.2rem solid #000;
   border-radius: 10rem;
   text-decoration: none;
   min-height: 4rem;
@@ -117,10 +97,14 @@
 .hero__review {
   display: flex;
   flex-direction: column;
+  border-radius: 2rem;
   gap: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(199, 199, 199, 0.01);
 
   p {
-    color: #fff;
+    color: #000;
     font-size: 1.4rem;
     font-weight: 400;
     margin: initial;
@@ -155,6 +139,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
+    max-width: 60rem;
   }
 
   .hero__review {
@@ -166,7 +151,6 @@
   }
 
   .hero__text  {
-    max-width: 64rem;
     gap: 3rem;
   }
 
@@ -185,11 +169,6 @@
     font-size: 1.8rem;
   }
 
-  .hero__logos {
-    width: calc(100% + 6rem);
-    margin-left: -3rem;
-  }
-
   .hero__image {
     display: flex;
   }
@@ -203,6 +182,10 @@
   .hero__wrapper {
     min-height: 80rem;
     padding-top: 20rem;
+  }
+
+  .hero__content {
+    max-width: 65rem;
   }
 
   .hero__title {
@@ -219,10 +202,6 @@
     min-height: 90rem;
   }
 
-  .hero__text {
-    max-width: 85rem;
-  }
-
   .hero__subtitle {
     font-size: 2.4rem;
   }
@@ -234,21 +213,6 @@
       font-size: 2.4rem;
     }
   }
-
-  .hero__logos {
-    width: calc(100% + 10rem);
-    margin-left: -5rem;
-  }
 }
 
 
-@keyframes marquee-horizontal-left {
-  0% {
-    transform: translateZ(0);
-    visibility: visible;
-  }
-  
-  100% {
-    transform: translate3d(-100%, 0, 0);
-  }
-}
