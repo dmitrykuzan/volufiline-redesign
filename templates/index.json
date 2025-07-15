@@ -162,6 +162,11 @@
       "type": "banner-melatonic-image",
       "name": "Banner only image",
       "settings": {}
+    },
+    "marquee_yxUUWw": {
+      "type": "marquee",
+      "name": "Marquee",
+      "settings": {}
     }
   },
   "order": [
@@ -171,6 +176,7 @@
     "banner_melatonic_marquee_3QjAwj",
     "featured_collection",
     "video_slider_tEYznC",
-    "banner_melatonic_image_aqYLmV"
+    "banner_melatonic_image_aqYLmV",
+    "marquee_yxUUWw"
   ]
 }
