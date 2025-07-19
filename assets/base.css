@@ -157,6 +157,10 @@ html {
 
 /* marquee */
 
+.marquee {
+  overflow: hidden;
+}
+
 .marquee__logos {
   display: inline-flex;
   overflow: hidden;

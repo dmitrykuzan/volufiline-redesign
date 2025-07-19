@@ -4,31 +4,43 @@
   <div class="banner-melatonic__wrapper">
     <div class="banner-melatonic__image">
       <img
+        class="banner-melatonic-banner-logo"
+        src="{{ 'banner-logo.png' | asset_url }}"
+        width="126"
+        height="126"
+        alt="banner logo"
+        loading="lazy"
+      >
+
+      <img
+        class="banner-melatonic__image-img"
         src="{{ 'banner-melatonic-img.jpg' | asset_url }}"
         width="880"
         height="660"
         alt="Melatonic bottle"
         loading="lazy"
       >
+
+      <a href="#" class="button-dark banner-melatonic__banner-btn" >25% OFF TODAY</a>
     </div>
 
     <div class="banner-melatonic__content">
       <div class="banner-melatonic__text">
-        <h2 class="banner-melatonic__title section-title-melatonic">melatonic 60ml</h2>
+        <h2 class="banner-melatonic__title section-title-melatonic">Volufiline 100%</h2>
         <div class="banner-melatonic__price">
-          <span class="text">$29 <span class="old-price">$39</span></span>
-          <span class="label">25% OFF</span>
+          Enhances volume and plumps skin
         </div>
       </div>
-      <p class="banner-melatonic__description">
-        Revive thinning hair with this 60ml bottle of Melatonic—a topical hair growth solution powered by melatonin and
-        naturally strengthening botanicals.
-      </p>
+      <div class="banner-melatonic__benefits">
+        <span>Volumize.</span>
+        <span>Tighten.</span>
+        <span>Restore.</span>
+      </div>
 
       {% for block in section.blocks %}
         {% if block.type == 'product' and block.settings.product %}
           {% assign product = block.settings.product %}
-          <a class="banner-melatonic__link button-dark" href="{{ product.url }}">BUY MELATONIC</a>
+          <a class="banner-melatonic__link button-dark" href="{{ product.url }}">GRAB A BOTTLE</a>
         {% endif %}
       {% endfor %}
     </div>
