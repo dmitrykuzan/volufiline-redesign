@@ -25,6 +25,11 @@
       "name": "Hero",
       "settings": {}
     },
+    "marquee_yxUUWw": {
+      "type": "marquee",
+      "name": "Marquee",
+      "settings": {}
+    },
     "banner_melatonic_DVir6m": {
       "type": "banner-melatonic",
       "blocks": {
@@ -162,21 +167,16 @@
       "type": "banner-melatonic-image",
       "name": "Banner only image",
       "settings": {}
-    },
-    "marquee_yxUUWw": {
-      "type": "marquee",
-      "name": "Marquee",
-      "settings": {}
     }
   },
   "order": [
     "hero_GmkTFD",
+    "marquee_yxUUWw",
     "banner_melatonic_DVir6m",
     "before_after_slider_TQD9nr",
     "banner_melatonic_marquee_3QjAwj",
     "featured_collection",
     "video_slider_tEYznC",
-    "banner_melatonic_image_aqYLmV",
-    "marquee_yxUUWw"
+    "banner_melatonic_image_aqYLmV"
   ]
 }
