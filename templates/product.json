@@ -97,6 +97,14 @@
         "padding_bottom": 0
       }
     },
+    "marquee_mn6g7p": {
+      "type": "marquee",
+      "name": "Marquee",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 20
+      }
+    },
     "banner_result_r7bNhR": {
       "type": "banner-result",
       "name": "Banner result",
@@ -334,6 +342,7 @@
   },
   "order": [
     "main",
+    "marquee_mn6g7p",
     "banner_result_r7bNhR",
     "banner_compound_43dE8r",
     "application_slider_CExgYL",
