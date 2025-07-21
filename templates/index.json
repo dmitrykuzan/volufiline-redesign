@@ -139,6 +139,17 @@
     },
     "banner_melatonic_image_aqYLmV": {
       "type": "banner-melatonic-image",
+      "blocks": {
+        "product_98RDxh": {
+          "type": "product",
+          "settings": {
+            "product": "volufiline-100"
+          }
+        }
+      },
+      "block_order": [
+        "product_98RDxh"
+      ],
       "name": "Banner only image",
       "settings": {}
     }
