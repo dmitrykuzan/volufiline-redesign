@@ -32,8 +32,8 @@
 
 .banner-melatonic-banner-logo {
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
   left: 2rem;
   top: 2rem;
 }
@@ -96,6 +96,14 @@
 
 
 @media screen and (min-width: 767px) {
+
+  .banner-melatonic__banner-btn {
+    bottom: 2rem;
+    left: 2rem;
+    top: initial;
+    right: initial;
+  }
+
   .banner-melatonic__wrapper {
     flex-direction: row;
   }
@@ -127,6 +135,11 @@
   .banner-melatonic__image {
     width: 50%;
     max-width: initial;
+  }
+
+  .banner-melatonic-banner-logo {
+    width: 10rem;
+    height: 10rem;
   }
 
   .banner-melatonic__content {
