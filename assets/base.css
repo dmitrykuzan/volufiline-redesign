@@ -82,8 +82,8 @@ html {
 /* custom fonts */
 @font-face {
   font-family: "Helvetica Neue";
-  src: url("HelveticaNeueCyr-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("HelveticaNeueCyr-Roman.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -97,6 +97,48 @@ html {
 @font-face {
   font-family: "Helvetica Neue";
   src: url("HelveticaNeueCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("SFProDisplay-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
@@ -135,6 +177,7 @@ html {
   font-weight: 500;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-family: "SF Pro Display";
   transition: border 0.3s linear, color 0.3s linear;
 }
 
@@ -2712,7 +2755,7 @@ input[type='checkbox'] {
 @media screen and (min-width: 990px) {
   .header__link-cta {
     border: 0.1rem solid rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
+    border-radius: 10rem;
     text-decoration: initial;
     min-width: 13rem;
     text-align: center;

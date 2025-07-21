@@ -382,12 +382,27 @@
 
 .result-slider__list {
   margin: initial;
-  padding: initial;
   list-style: none;
+  padding-top: initial;
+  padding-left: initial;
+  padding-right: initial;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #66645E;
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.result-slider__bottom-text {
+  color: #404040;
+  font-size: 1.6rem;
+  margin: initial;
+  line-height: 133%;
+
+  span {
+    font-weight: 600;
+  }
 }
 
 .result-slider__item {
@@ -396,7 +411,7 @@
   gap: 1rem;
 
   .result-slider__item-precent {
-    color: #506A45;
+    color: #404040;
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 100%;
@@ -422,10 +437,14 @@
 
   .result-slider__body {
     border-radius: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .result-slider__item {
     gap: 1.5rem;
+    flex-direction: row;
+    align-items: center;
 
     .result-slider__item-precent {
       font-size: 2.8rem;
@@ -599,7 +618,7 @@
 
 @media screen and (min-width: 992px) {
   .result-slider__wrapper {
-    max-width: 85rem;
+    max-width: 110rem;
     position: relative;
     margin: 0 auto;
   }
@@ -607,22 +626,29 @@
 
 @media screen and (min-width: 1023px) {
   .result-slider__slide-image {
-    max-width: 42rem;
-    height: 29rem;
+    max-width: 48rem;
+    height: 37rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .result-slider__slide-image {
+    max-width: 52rem;
+    height: 42rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .result-slider__slide-image {
-    max-width: 55rem;
-    height: 40rem;
+    max-width: 60rem;
+    height: 46rem;
   }
 }
 
 @media screen and (min-width: 1480px) {
   .result-slider__slide-image {
-    max-width: 60rem;
-    height: 43rem;
+    max-width: 70rem;
+    height: 57rem;
   }
 }
 
@@ -688,6 +714,7 @@
 .result-slider__slide-percent {
   font-size: 1.8rem;
   font-weight: 700;
+  color: #404040;
 }
 
 @media screen and (min-width: 1023px) {
@@ -714,7 +741,7 @@
     margin: initial;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #66645E;
+    color: #404040;
   }
 }
 
@@ -726,7 +753,7 @@
   }
 
   .result-slider__wrapper {
-    max-width: 135rem;
+    max-width: 155rem;
   }
 }
 
@@ -750,7 +777,7 @@
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: #fff;
+  background-color: #E3FFFF;
   border-radius: 10rem;
 }
 
@@ -759,11 +786,12 @@
   font-size: 1.6rem;
   line-height: 122%;
   font-weight: 700;
+  color: #404040;
 }
 
 @media screen and (min-width: 1023px) {
   .result-slider__slide-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 

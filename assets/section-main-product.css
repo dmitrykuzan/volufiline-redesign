@@ -402,7 +402,7 @@ product-info {
 .product__info-container .product-form,
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .product__text {
@@ -422,10 +422,13 @@ a.product__text {
 .product__title {
   display: flex;
   justify-content: space-between;
-  flex-direction: column-reverse;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  
   gap: 0.8rem;
   word-break: break-word;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   h1 {
     font-size: 3.2rem;
@@ -444,9 +447,9 @@ a.product__text {
   }
 }
 
+
 @media screen and (min-width: 767px) {
   .product__title {
-    
     h1 {
       font-size: 4.4rem;
     }

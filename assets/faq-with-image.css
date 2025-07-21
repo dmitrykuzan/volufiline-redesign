@@ -130,15 +130,13 @@
     margin-top: 7rem;
   } 
 
-  .faq-with-image__wrapper {
-    flex-direction: row-reverse;
-  }
-
   .faq-with-image__picture {
     max-height: initial;
+    width: 50%;
   }
 
   .faq-with-image__wrapper {
+    flex-direction: row;
     border-radius: initial;
     gap: 2rem;
   }
@@ -165,6 +163,7 @@
     padding-right: 2rem;
     padding-bottom: 5rem;
     height: max-content;
+    width: 50%;
   }
 }
 
