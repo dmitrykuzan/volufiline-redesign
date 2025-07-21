@@ -101,8 +101,8 @@
       "type": "marquee",
       "name": "Marquee",
       "settings": {
-        "padding_top": 80,
-        "padding_bottom": 15
+        "padding_top": 35,
+        "padding_bottom": 0
       }
     },
     "banner_result_r7bNhR": {
