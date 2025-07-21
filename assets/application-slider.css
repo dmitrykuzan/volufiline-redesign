@@ -14,9 +14,8 @@
   width: 100%;
 }
 
-
 .application-slider__wrapper--mobile {
-  background-color: #F1F0ED;
+  background-color: #F7F7F7;
   padding: 1.5rem;
   border-radius: 2rem;
 }
@@ -42,7 +41,7 @@
   margin-top: 3rem;
 
   .before-after-slider__btns {
-    margin-bottom: 3rem;
+    margin-top: 3rem;
     justify-content: space-between;
 
     .before-after-slider__btn {
@@ -81,19 +80,49 @@
   }
 }
 
+.swiper-slide-thumb-active {
+  .application-slider__slide-thumb-circle {
+    background-color: #E2E2E2;
+  }
+
+  .application-slider__slide-thumb-text {
+    opacity: 1;
+  }
+}
+
 .application-slider__slide-thumb {
   position: relative;
-  height: 15rem;
-  cursor: pointer;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
-  img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
-  }
+.application-slider__slide-thumb-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.1rem solid #404040;
+  width: 8rem;
+  height: 8rem;
+  transition: background-color 0.3s linear border 0.3s linear;
+  cursor: pointer;
+}
+
+.application-slider__slide-thumb-circle:hover {
+  border: 0.1rem solid #000;
+}
+
+.application-slider__slide-thumb-nubmer {
+  font-size: 2.2rem;
+}
+
+.application-slider__slide-thumb-text {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 450px) {
@@ -113,7 +142,6 @@
 }
 
 @media screen and (min-width: 1023px) {
-
   .application-slider {
     margin-top: 7rem;
   }
@@ -125,6 +153,10 @@
 
   .application-slider__wrapper {
     width: initial;
+  }
+
+  .application-slider__swiper-thumbnail {
+    max-width: 42rem;
   }
 
   .application-slider__swiper-image {
@@ -164,15 +196,15 @@
       }
     }
   }
-    .application-slider__swiper-text {
-      .before-after-slider__btns {
-        .before-after-slider__btn {
-          width: 5rem;
-          height: 5rem;
-        }
+
+  .application-slider__swiper-text {
+    .before-after-slider__btns {
+      .before-after-slider__btn {
+        width: 5rem;
+        height: 5rem;
       }
     }
-
+  }
 }
 
 @media screen and (min-width: 1380px) {
@@ -202,12 +234,5 @@
         font-size: 2.4rem;
       }
     }
-  }
-  
-}
-
-@media screen and (min-width: 1520px) {
-  .application-slider__slide-thumb {
-    height: 17rem;
   }
 }

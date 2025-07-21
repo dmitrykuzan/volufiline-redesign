@@ -71,7 +71,7 @@
 
   .banner-result__description {
     margin: initial;
-    color: #67645E;
+    color: #404040;
     line-height: 133%;
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid #ADADAD;
@@ -79,7 +79,7 @@
 
   .banner-result__subtitle {
     margin: initial;
-    color: #67645E;
+    color: #404040;
     font-size: 2.4rem;
     font-weight: 900;
     margin-top: 3rem;
@@ -395,7 +395,6 @@
 }
 
 .result-slider__bottom-text {
-  color: #404040;
   font-size: 1.6rem;
   margin: initial;
   line-height: 133%;
@@ -411,7 +410,6 @@
   gap: 1rem;
 
   .result-slider__item-precent {
-    color: #404040;
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 100%;
@@ -714,7 +712,6 @@
 .result-slider__slide-percent {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #404040;
 }
 
 @media screen and (min-width: 1023px) {
@@ -741,7 +738,6 @@
     margin: initial;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #404040;
   }
 }
 
@@ -786,7 +782,6 @@
   font-size: 1.6rem;
   line-height: 122%;
   font-weight: 700;
-  color: #404040;
 }
 
 @media screen and (min-width: 1023px) {
