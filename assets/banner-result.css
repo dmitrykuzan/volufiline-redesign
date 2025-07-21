@@ -425,7 +425,7 @@
 @media screen and (min-width: 1023px) {
 
   .result-slider {
-    margin-top: 7rem;
+    margin-top: 2rem;
 
     .melatonic-swiper-button-prev, .melatonic-swiper-button-next {
       width: 5rem;
