@@ -137,22 +137,6 @@
       "name": "Video Review Slider",
       "settings": {}
     },
-    "banner_melatonic_image_aqYLmV": {
-      "type": "banner-melatonic-image",
-      "blocks": {
-        "product_98RDxh": {
-          "type": "product",
-          "settings": {
-            "product": "volufiline-100"
-          }
-        }
-      },
-      "block_order": [
-        "product_98RDxh"
-      ],
-      "name": "Banner only image",
-      "settings": {}
-    },
     "review_slider_rwyybB": {
       "type": "review-slider",
       "blocks": {
@@ -168,6 +152,22 @@
       ],
       "name": "Review Slider",
       "settings": {}
+    },
+    "banner_melatonic_image_aqYLmV": {
+      "type": "banner-melatonic-image",
+      "blocks": {
+        "product_98RDxh": {
+          "type": "product",
+          "settings": {
+            "product": "volufiline-100"
+          }
+        }
+      },
+      "block_order": [
+        "product_98RDxh"
+      ],
+      "name": "Banner only image",
+      "settings": {}
     }
   },
   "order": [
@@ -177,7 +177,7 @@
     "before_after_slider_TQD9nr",
     "banner_melatonic_marquee_3QjAwj",
     "video_slider_tEYznC",
-    "banner_melatonic_image_aqYLmV",
-    "review_slider_rwyybB"
+    "review_slider_rwyybB",
+    "banner_melatonic_image_aqYLmV"
   ]
 }
