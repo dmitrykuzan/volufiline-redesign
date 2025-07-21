@@ -601,11 +601,11 @@
 .result-slider__slide-image {
   display: flex;
   gap: 1rem;
-  max-width: 29rem;
+  max-width: 28rem;
   margin-left: auto;
   margin-right: auto;
   flex-shrink: 0;
-  height: 20rem;
+  height: 27rem;
 
   img {
     height: auto;
@@ -857,7 +857,7 @@
 
 .result-slider__navigation-btns {
   position: absolute;
-  top: 22rem;
+  top: 29rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;

@@ -1,57 +1,6 @@
 {{ 'custom-review.css' | asset_url | stylesheet_tag }}
 
-{% schema %}
-{
-  "name": "Custom Review List",
-  "tag": "section",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "list_item",
-      "name": "Customer Review",
-      "settings": [
-        {
-          "type": "text",
-          "id": "name_customer",
-          "label": "Enter reviewer name"
-        },
-        {
-          "type": "text",
-          "id": "title_review",
-          "label": "Enter review title",
-          "default": "Melatonic • Hair Growth Solution"
-        },
-        {
-          "type": "text",
-          "id": "review_date",
-          "label": "Enter review date"
-        },
-        {
-          "type": "range",
-          "id": "review_rating",
-          "label": "Rating (1-5)",
-          "min": 1,
-          "max": 5,
-          "step": 1,
-          "default": 5
-        },
-        {
-          "type": "richtext",
-          "id": "review_text",
-          "label": "Review text",
-          "default": "<p>Lightning fast delivery, great job</p>"
-        }
-      ]
-    }
-  ],
 
-  "presets": [
-    {
-      "name": "Custom Review List"
-    }
-  ]
-}
-{% endschema %}
 
 <div class="custom-review page-width">
   <div class="custom-review__inner">
@@ -171,3 +120,56 @@
     }
   });
 </script>
+
+{% schema %}
+{
+  "name": "Custom Review List",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "list_item",
+      "name": "Customer Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name_customer",
+          "label": "Enter reviewer name"
+        },
+        {
+          "type": "text",
+          "id": "title_review",
+          "label": "Enter review title",
+          "default": "Volufiline • Hair Growth Solution"
+        },
+        {
+          "type": "text",
+          "id": "review_date",
+          "label": "Enter review date"
+        },
+        {
+          "type": "range",
+          "id": "review_rating",
+          "label": "Rating (1-5)",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review text",
+          "default": "<p>Lightning fast delivery, great job</p>"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Custom Review List"
+    }
+  ]
+}
+{% endschema %}

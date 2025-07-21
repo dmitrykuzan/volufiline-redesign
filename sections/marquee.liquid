@@ -1,12 +1,12 @@
  {%- style -%}
   .marquee__logos {
-    margin: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 2rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 2rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 0rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 0rem;
   }
 
   @media screen and (min-width: 990px) {
     .marquee__logos {
-      margin-top: {{ section.settings.padding_top }}px;
-      margin-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%} 
