@@ -189,9 +189,6 @@
 
 .banner-compound__title {
   margin: initial;
-  font-size: 3.2rem;
-  line-height: 120%;
-  font-weight: 900;
 }
 
 .banner-compound__text {
@@ -227,7 +224,7 @@
 
 .banner-compound__item-title {
   margin: initial;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 120%;
 }
@@ -245,9 +242,17 @@
       display: flex;
     }
   }
+
+  .banner-compound__item-title {
+    font-size: 2.4rem;
+  }
   
   .banner-compound__wrapper {
     flex-direction: row;
+  }
+
+  .banner-compound__list {   
+    margin-top: 5rem;
   }
 
   .banner-compound__content-wrapper {
@@ -255,23 +260,36 @@
     margin-left: auto;
     margin-top: auto;
   }
+}
 
+@media screen and (min-width: 1100px) {
   .banner-compound__title {
-    font-size: 4.8rem;
+    position: absolute;
+    left: -9rem;
+    font-size: 4rem;
+    top: 15rem;
+    transform: rotate(90deg);
   }
 }
 
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1170px) {
   .banner-compound__title {
-    position: absolute;
-    left: -14rem;
-    top: 24rem;
-    font-size: 6rem;
-    transform: rotate(90deg);
+    left: -8rem;
+    top: 18rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+
+  .banner-compound__title {
+    left: -8rem;
+    top: 18rem;
+    font-size: 5rem;
   }
 
   .banner-compound__item-title {
-    font-size: 3.4rem;
+    font-size: 2.8rem;
   }
 
   .banner-compound__item-description {
@@ -779,22 +797,9 @@
 
 .result-slider__slide-title {
   margin: initial;
-  font-size: 1.6rem;
   line-height: 122%;
-  font-weight: 700;
 }
 
-@media screen and (min-width: 1023px) {
-  .result-slider__slide-title {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .result-slider__slide-title {
-    font-size: 2.8rem;
-  }
-}
 
 .result-slider__slide-list {
   display: flex;

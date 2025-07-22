@@ -60,11 +60,11 @@
     flex-direction: column;
     gap: 2rem;
 
-    .label {
+    /* .label {
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       line-height: 110%;
-    }
+    } */
 
     p {
       margin: initial;
@@ -187,9 +187,9 @@
     margin-top: 15rem;
 
     .application-slider__slide-text {
-      .label {
-        font-size: 3rem;
-      }
+      /* .label {
+        font-size: 3.2rem;
+      } */
 
       p {
         font-size: 2rem;
@@ -230,9 +230,9 @@
     margin-top: 20rem;
 
      .application-slider__slide-text {
-      .label {
+      /* .label {
         font-size: 3.4rem;
-      }
+      } */
 
       p {
         font-size: 2.4rem;

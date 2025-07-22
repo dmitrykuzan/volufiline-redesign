@@ -22,9 +22,7 @@
 
 .product-banner__title {
   margin: initial;
-  font-size: 2rem;
   line-height: 133%;
-  font-weight: 700;
 }
 
 .product-banner__text {
@@ -54,10 +52,6 @@
 
   .product-banner__content {
     justify-content: flex-end;
-  }
-
-  .product-banner__title {
-    font-size: 3.2rem;
   }
 
   .product-banner__text {
