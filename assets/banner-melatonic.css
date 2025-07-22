@@ -4,7 +4,7 @@
 
 .banner-melatonic__wrapper {
   overflow: hidden;
-  background-color: #F1F0ED;
+  background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
   border-radius: 2rem;
@@ -24,8 +24,8 @@
 
 .banner-melatonic__banner-btn {
   position: absolute;
-  right: 2rem;
-  top: 5rem;
+  right: 0;
+  top: 2.8rem;
   max-width: 15rem;
   width: 100%;
 }
@@ -44,59 +44,58 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  gap: 2rem;
-  padding-top: 2rem;
+  gap: 1rem;
+  padding-top: 3rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   padding-left: 2rem;
 }
 
 .banner-melatonic__text {
   display:flex; 
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .banner-melatonic__title {
-  margin: initial;
   text-align: center;
-  font-size: 2rem;
-  line-height: 120%;
+  margin: initial;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .banner-melatonic__price {
+  margin: initial;
   text-align: center;
-  gap: 1rem;
 }
 
 .banner-melatonic__description {
   margin: initial;
   line-height: 166%;
-  text-align: center;
 }
 
 .banner-melatonic__benefits {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
   span {
     text-align: center;
     font-size: 5rem;
     font-weight: 700;
     line-height: 100%;
+    color: #000;
   }
 }
 
 .banner-melatonic__link {
-  margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
 }
 
 
 @media screen and (min-width: 767px) {
-
   .banner-melatonic__banner-btn {
     bottom: 2rem;
     left: 2rem;
@@ -146,16 +145,20 @@
     width: 50%;
   }
 
-  .banner-melatonic__title {
-    font-size: 2.6rem;
-  }
-
   .banner-melatonic__text {
     align-items: center;
   }
 
+  .banner-melatonic__title {
+    font-size: 2.6rem;
+  }
+
   .banner-melatonic__banner-btn {
     max-width: 18rem;
+  }
+
+  .banner-melatonic__link {
+    margin-left: auto;
   }
 
   .banner-melatonic__price {
@@ -195,6 +198,17 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .banner-melatonic__title {
+    font-size: 4.6rem;
+  }
+  
+  .banner-melatonic__description {
+    font-size: 1.8rem;
+  }
+}
+
+
 /* banner with image */
 
 .banner-melatonic-image {
@@ -230,7 +244,7 @@
 }
 
 .banner-melatonic-image-logo {
-  max-width: 32rem;
+  max-width: 22rem;
 
   svg {
     width: 100%;
@@ -248,7 +262,7 @@
   padding-right: 1.5rem;
   width: 100%;
   height: 100%;
-  gap: 3rem;
+  gap: 4rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -259,7 +273,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
   h3, h2 {
     margin: initial;
@@ -279,11 +293,22 @@
 }
 
 .banner-melatonic-image-link {
-  border-color: #fff;
-  color: #fff;
+  background-color: #fff;
+  border: initial;
+  color: #000;
+  padding-left: 2rem;
+  padding-right: 2rem;
   line-height: 100%;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
   max-width: 25rem;
+  transition:  background-color 0.3s linear, color 0.3s linear;
+}
+
+.banner-melatonic-image-link:hover {
+  background-color: #000;
+  color: #fff;
+  border: initial;
 }
 
 .banner-melatonic-image__image, .banner-melatonic-image__image--mobile {
@@ -310,11 +335,19 @@
     min-height: 45rem;
     max-height: 65rem;
   }
+
+  .banner-melatonic-image-logo {
+    max-width: 32rem;
+  }
 }
 
 @media screen and (min-width: 1023px) {
   .banner-melatonic-image {
     margin-top: 7rem;
+  }
+
+  .banner-melatonic-image-logo {
+    max-width: 56rem;
   }
 
   .banner-melatonic-image__image, .banner-melatonic-image__image--mobile {
@@ -323,26 +356,35 @@
     }
   }
 
+  .banner-melatonic-image-content {
+    gap: 6rem;
+  }
+
+
   .banner-melatonic-image-text {
     h3 {
-      font-size: 2rem;
+      font-size: 2.8rem;
     }
 
     h2 {
-      font-size: 5rem;
+      font-size: 7rem;
       letter-spacing: 18px;
     }
+  }
+
+  .banner-melatonic-image-link {
+    min-height: 5.5rem;
   }
 }
 
 @media screen and (min-width: 1380px) {
   .banner-melatonic-image-text {
     h3 {
-      font-size: 2.4rem;
+      font-size: 3.4rem;
     }
 
     h2 {
-      font-size: 5.6rem;
+      font-size: 8.6rem;
       letter-spacing: 18px;
     }
   }
@@ -358,6 +400,10 @@
 
 .banner-melatonic__wrapper-marquee {
   flex-direction: column-reverse;
+
+  .banner-melatonic__title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -433,6 +479,8 @@
     white-space: nowrap;
     width: calc(100% + 4rem);
     margin-left: -2rem;
+
+    display: none;
 }
 
 @media screen and (min-width: 1023px) {
@@ -444,6 +492,8 @@
     right: -47rem;
     width: 100rem; 
     margin-left: initial;
+
+    display: block;
   }
 }
 

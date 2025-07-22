@@ -11,7 +11,7 @@
 }
 
 .before-after-slider__content-wrapper {
-  background-color: #EEEDEA;
+  background-color: #F7F7F7;
   border-radius: 2rem;
   padding-bottom: 3rem;
 }
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
   margin-bottom: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -30,27 +30,19 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 3rem;
+    gap: 1.5rem;
     width: max-content;
     border-radius: 2rem;
-    padding: 2rem;
-    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.2);
-    background: rgba(199, 199, 199, 0.01);
 
     p {
       margin: initial;
     }
   }
 
-  h2 {
-    font-size: 2.8rem;
-    line-height: 122%;
-  }
-
   p {
     line-height: 122%;
     font-weight: 500;
-    color: #66645E;
+    color: #404040;
   }
 
   >* {
@@ -91,9 +83,9 @@
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  line-height: 122%;
   font-weight: 700;
-  text-transform: uppercase;
   color: #fff;
 }
 
@@ -119,7 +111,7 @@
 }
 
 .before-after-slider__btns {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1rem;
 } 
@@ -163,11 +155,17 @@
 .before-after-slider__link {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media screen and (min-width: 767px) {
   .before-after-slider__titles {
     flex-direction: row;
+  }
+
+  .before-after-slider__slide-text {
+    font-size: 1.6rem;
   }
 
   .before-after-slider {
@@ -217,13 +215,23 @@
     padding-right: 3rem;
     padding-top: 3rem;
     margin-bottom: 3rem;
+    gap: 2rem;
 
-    h2 {
-      font-size: 3.8rem;
+    .hero__review {
+      gap: 3rem;
+
+      .melatonic-rating-star {
+        width: 3rem;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
 
     p {
-      font-size: 2.6rem;
+      font-size: 3.4rem;
     }
   }
 
@@ -243,6 +251,7 @@
   }
 
   .before-after-slider__btns {
+    display: flex;
     gap: 2rem;
 
     .before-after-slider__btn {
@@ -256,9 +265,9 @@
   }
 
   .before-after-slider__slide-text {
-    bottom: 1rem;
     left: 2rem;
-    font-size: 2rem;
+    bottom: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -266,10 +275,6 @@
   .before-after-slider__titles {
    margin-bottom: 5rem;
    padding-top: 5rem;
-
-   h2 {
-    font-size: 6.4rem;
-   }
   }
   
   .before-after-slider__images {
@@ -278,5 +283,7 @@
 
   .before-after-slider__slide-text {
     font-size: 2.4rem;
+    left: 2rem;
+    bottom: 1.5rem;
   }
 }

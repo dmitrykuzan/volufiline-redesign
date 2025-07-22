@@ -4,12 +4,12 @@
 
   <div class="review-slider__body">
     <div class="review-slider__titles">
-      <h2>Join 600K+ others loving the skin they’re in</h2>
+      <h2 class="section-title-volufiline">Join 600K+ others loving the skin they’re in</h2>
 
       {% for block in section.blocks %}
         {% if block.type == 'product' and block.settings.product %}
           {% assign product = block.settings.product %}
-          <a class="review-slider__link button-dark" href="{{ product.url }}">Try VOLUFILINE Now</a>
+          <a class="review-slider__link button-dark" href="{{ product.url }}">BUY VOLUFILINE Now</a>
         {% endif %}
       {% endfor %}
     </div>
@@ -942,6 +942,7 @@
     const swiperBeforeAfter = new Swiper('.review-slider__swiper', {
       spaceBetween: 12,
       slidesPerView: 1.2,
+      initialSlide: 2,
       centeredSlides: true,
       autoHeight: true,
 
@@ -953,9 +954,15 @@
         },
 
         1024: {
-          spaceBetween: 30,
-          slidesPerView: 3,
-          centeredSlides: false,
+          spaceBetween: 40,
+          slidesPerView: 1.9,
+          centeredSlides: true,
+        },
+
+        1380: {
+          spaceBetween: 40,
+          slidesPerView: 3.2,
+          centeredSlides: true,
         },
       },
     });

@@ -165,8 +165,8 @@ html {
   justify-content: center;
   text-align: center;
   line-height: 145%;
-  color: #66645E;
-  border: 0.2rem solid #66645E;
+  color: #404040;
+  border: 0.2rem solid #404040;
   border-radius: 10rem;
   text-decoration: none;
   min-height: 4rem;
@@ -178,12 +178,12 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: "SF Pro Display";
-  transition: border 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear;
 }
 
 .button-dark:hover {
-  border: 0.2rem solid #000;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 }
 
 @media screen and (min-width: 1023px) {
@@ -193,9 +193,22 @@ html {
   }
 }
 
-.section-title-melatonic {
-   font-weight: 600;
+.section-title-volufiline {
+   font-weight: 700;
    line-height: 120%;
+   font-size: 2.2rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .section-title-volufiline {
+   font-size: 3.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-title-volufiline {
+   font-size: 5.4rem;
+  }
 }
 
 /* marquee */
@@ -2465,6 +2478,10 @@ input[type='checkbox'] {
   margin: 0;
   letter-spacing: 0.1rem;
   min-height: 3.8rem;
+
+  span {
+    color: #fff;
+  }
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,

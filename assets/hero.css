@@ -1,14 +1,24 @@
 .hero__wrapper {
  position: relative;
  display: flex;
- flex-direction: column;
- justify-content: space-between;
+ flex-direction: column-reverse;
+ justify-content: flex-end;
+ gap: 1.5rem;
  min-height: 60rem;
  overflow: hidden;
  padding-left: 1rem;
  padding-right: 1rem;
  padding-bottom: 2rem;
  padding-top: 3rem;
+
+ .hero__review {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(199, 199, 199, 0.01);
+ }
 }
 
 .hero__image {
@@ -37,11 +47,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   padding: 2rem;
   gap: 1.5rem;
   box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.2);
   background: rgba(199, 199, 199, 0.01);
+  backdrop-filter: blur(5px);
 }
 
 .hero__title {
@@ -57,7 +68,7 @@
 .hero__subtitle {
   font-size: 1.4rem;
   line-height: 166%;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: #000;
   margin: initial;
   text-align: center;
@@ -91,12 +102,14 @@
 
 .hero__review {
   display: flex;
-  flex-direction: column;
-  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
   gap: 1rem;
-  padding: 2rem;
-  box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(199, 199, 199, 0.01);
+
+  .melatonic-rating-star {
+    max-width: 1.5rem;
+  }
 
   p {
     color: #000;
@@ -110,11 +123,7 @@
   }
 }
 
-.hero__bottom {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 
 @media screen and (min-width: 575px) {
   .hero__wrapper {
@@ -128,6 +137,12 @@
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
+
+    .hero__review {
+      justify-content: flex-start;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
   }
 
   .hero__content {
@@ -140,6 +155,10 @@
   .hero__review {
     flex-direction: row;
     gap: 3rem;
+
+    .melatonic-rating-star {
+      max-width: initial;
+    }
 
     .melatonic-rating-stars {
       gap: 1rem;
@@ -166,6 +185,8 @@
 
   .hero__subtitle {
     font-size: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .hero__product-link {
