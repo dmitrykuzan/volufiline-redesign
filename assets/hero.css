@@ -9,7 +9,7 @@
  padding-left: 1rem;
  padding-right: 1rem;
  padding-bottom: 2rem;
- padding-top: 3rem;
+ padding-top: 1.5rem;
 
  .hero__review {
   padding-left: 2rem;
@@ -68,7 +68,8 @@
 .hero__subtitle {
   font-size: 1.4rem;
   line-height: 166%;
-  letter-spacing: 3px;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: #000;
   margin: initial;
   text-align: center;
