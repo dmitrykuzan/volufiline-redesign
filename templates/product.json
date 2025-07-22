@@ -113,12 +113,6 @@
     "video_slider_XL47WV": {
       "type": "video-slider",
       "blocks": {
-        "product_Ngy4D4": {
-          "type": "product",
-          "settings": {
-            "product": "volufiline-100"
-          }
-        },
         "video_slide_MGJrt8": {
           "type": "video_slide",
           "settings": {
@@ -156,7 +150,6 @@
         }
       },
       "block_order": [
-        "product_Ngy4D4",
         "video_slide_MGJrt8",
         "video_slide_TB6wKV",
         "video_slide_Cttgct",
