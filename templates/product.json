@@ -338,6 +338,38 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "video_slider_pwzmGD": {
+      "type": "video-slider",
+      "blocks": {
+        "product_Lygw9f": {
+          "type": "product",
+          "settings": {
+            "product": "volufiline-100"
+          }
+        },
+        "video_slide_HNn4f4": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/81905975eff140ae80eadccde63f741e.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0729/0565/4421/files/poster-1.jpg?v=1752183385"
+          }
+        },
+        "video_slide_DaAd7H": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "",
+            "poster_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_Lygw9f",
+        "video_slide_HNn4f4",
+        "video_slide_DaAd7H"
+      ],
+      "name": "Video Review Slider",
+      "settings": {}
     }
   },
   "order": [
@@ -349,6 +381,7 @@
     "before_after_slider_product_tryxX8",
     "faq_with_image_h6L8VQ",
     "custom_review_GfAPgy",
-    "related-products"
+    "related-products",
+    "video_slider_pwzmGD"
   ]
 }
