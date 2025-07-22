@@ -108,6 +108,12 @@
     "video_slider_XL47WV": {
       "type": "video-slider",
       "blocks": {
+        "product_Ngy4D4": {
+          "type": "product",
+          "settings": {
+            "product": "volufiline-100"
+          }
+        },
         "video_slide_MGJrt8": {
           "type": "video_slide",
           "settings": {
@@ -142,29 +148,15 @@
             "video_url": "https://cdn.shopify.com/videos/c/o/v/81905975eff140ae80eadccde63f741e.mp4",
             "poster_url": "https://cdn.shopify.com/s/files/1/0729/0565/4421/files/poster-1.jpg?v=1752183385"
           }
-        },
-        "video_slide_HUFHMW": {
-          "type": "video_slide",
-          "settings": {
-            "video_url": "",
-            "poster_url": ""
-          }
-        },
-        "product_Ngy4D4": {
-          "type": "product",
-          "settings": {
-            "product": "volufiline-100"
-          }
         }
       },
       "block_order": [
+        "product_Ngy4D4",
         "video_slide_MGJrt8",
         "video_slide_TB6wKV",
         "video_slide_Cttgct",
         "video_slide_grN3jL",
-        "video_slide_JrbYkj",
-        "video_slide_HUFHMW",
-        "product_Ngy4D4"
+        "video_slide_JrbYkj"
       ],
       "name": "Video Review Slider",
       "settings": {}
