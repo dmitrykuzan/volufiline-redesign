@@ -348,11 +348,25 @@
             "product": "volufiline-100"
           }
         },
+        "video_slide_Qn8N3q": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/81905975eff140ae80eadccde63f741e.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0729/0565/4421/files/poster-1.jpg?v=1752183385"
+          }
+        },
         "video_slide_HNn4f4": {
           "type": "video_slide",
           "settings": {
             "video_url": "https://cdn.shopify.com/videos/c/o/v/81905975eff140ae80eadccde63f741e.mp4",
             "poster_url": "https://cdn.shopify.com/s/files/1/0729/0565/4421/files/poster-1.jpg?v=1752183385"
+          }
+        },
+        "video_slide_Rfp7Wx": {
+          "type": "video_slide",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/46acfd77a4554ce8b4ce278b1b2a7e35.mp4",
+            "poster_url": "https://cdn.shopify.com/s/files/1/0729/0565/4421/files/TikDownloader.io_7190785312971361579_hd_-_frame_at_0m0s.jpg?v=1751911688"
           }
         },
         "video_slide_DaAd7H": {
@@ -365,7 +379,9 @@
       },
       "block_order": [
         "product_Lygw9f",
+        "video_slide_Qn8N3q",
         "video_slide_HNn4f4",
+        "video_slide_Rfp7Wx",
         "video_slide_DaAd7H"
       ],
       "name": "Video Review Slider",
