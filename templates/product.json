@@ -105,6 +105,11 @@
         "padding_bottom": 5
       }
     },
+    "banner_result_r7bNhR": {
+      "type": "banner-result",
+      "name": "Banner result",
+      "settings": {}
+    },
     "video_slider_XL47WV": {
       "type": "video-slider",
       "blocks": {
@@ -159,11 +164,6 @@
         "video_slide_JrbYkj"
       ],
       "name": "Video Review Slider",
-      "settings": {}
-    },
-    "banner_result_r7bNhR": {
-      "type": "banner-result",
-      "name": "Banner result",
       "settings": {}
     },
     "product_banner_hpKz3U": {
@@ -388,8 +388,8 @@
   "order": [
     "main",
     "marquee_mn6g7p",
-    "video_slider_XL47WV",
     "banner_result_r7bNhR",
+    "video_slider_XL47WV",
     "product_banner_hpKz3U",
     "banner_compound_43dE8r",
     "application_slider_CExgYL",
