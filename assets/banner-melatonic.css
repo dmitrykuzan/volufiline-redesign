@@ -44,7 +44,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  gap: 1rem;
+  gap: 1.5rem;
   padding-top: 3rem;
   padding-right: 2rem;
   padding-bottom: 3rem;
@@ -54,14 +54,13 @@
 .banner-melatonic__text {
   display:flex; 
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .banner-melatonic__title {
   text-align: center;
   margin: initial;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .banner-melatonic__price {
