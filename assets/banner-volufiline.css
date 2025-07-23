@@ -73,6 +73,17 @@
   line-height: 166%;
 }
 
+.banner-volufiline-image-sephora {
+  max-width: 23rem;
+  margin-top: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 .banner-volufiline__benefits {
   display: flex;
   flex-direction: column;
@@ -91,6 +102,7 @@
 
 .banner-volufiline__link {
   margin-right: auto;
+  margin-left: auto;
   margin-top: 2rem;
 }
 
@@ -155,6 +167,10 @@
     align-items: center;
   }
 
+  .banner-volufiline-image-sephora {
+    max-width: 34rem;
+  }
+
   .banner-volufiline__title {
     font-size: 2.4rem;
   }
@@ -201,6 +217,12 @@
    .banner-volufiline__image {
     width: 55%;
     max-width: initial;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .banner-volufiline-image-sephora {
+    max-width: 42rem;
   }
 }
 
@@ -281,7 +303,7 @@
   align-items: center;
   gap: 0.5rem;
 
-  h3, h2 {
+  h3 {
     margin: initial;
     color: #fff;
     text-align: center;
@@ -289,12 +311,6 @@
 
   h3 {
     font-size: 1.6rem;
-  }
-
-  h2 {
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    font-size: 3rem;
   }
 }
 
@@ -371,15 +387,11 @@
     h3 {
       font-size: 2.8rem;
     }
-
-    h2 {
-      font-size: 7rem;
-      letter-spacing: 18px;
-    }
   }
 
   .banner-volufiline-image-link {
     min-height: 5.5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -387,11 +399,6 @@
   .banner-volufiline-image-text {
     h3 {
       font-size: 3.4rem;
-    }
-
-    h2 {
-      font-size: 8.6rem;
-      letter-spacing: 18px;
     }
   }
 }

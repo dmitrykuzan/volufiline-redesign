@@ -5,13 +5,6 @@
   <div class="review-slider__body">
     <div class="review-slider__titles">
       <h2 class="section-title-volufiline">Join 600K+ others loving the skin they’re in</h2>
-
-      {% for block in section.blocks %}
-        {% if block.type == 'product' and block.settings.product %}
-          {% assign product = block.settings.product %}
-          <a class="review-slider__link button-dark" href="{{ product.url }}">BUY VOLUFILINE Now</a>
-        {% endif %}
-      {% endfor %}
     </div>
     <div class="review-slider__container">
       <div class="review-slider__wrapper">
@@ -973,27 +966,10 @@
 {% schema %}
 {
   "name": "Review Slider",
-  "blocks": [
-    {
-      "type": "product",
-      "name": "Product link",
-      "settings": [
-        {
-          "type": "product",
-          "id": "product",
-          "label": "Select a product"
-        }
-      ]
-    }
-  ],
+  "settings": [],
   "presets": [
     {
-      "name": "Review Slider",
-      "blocks": [
-        {
-          "type": "product"
-        }
-      ]
+      "name": "Review Slider"
     }
   ]
 }

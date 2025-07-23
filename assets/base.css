@@ -215,6 +215,7 @@ html {
 
 .marquee {
   overflow: hidden;
+  margin-top: 1rem;
 }
 
 .marquee__logos {
@@ -238,7 +239,7 @@ html {
 
 .marquee__logo {
   width: 100%;
-  max-width: 15rem;
+  max-width: 10rem;
 
   svg {
     width: 100%;
@@ -248,9 +249,14 @@ html {
 }
 
 @media screen and (min-width: 1023px) {
+
   .marquee__logos {
     width: calc(100% + 6rem);
     margin-left: -3rem;
+  }
+
+  .marquee__logo {
+    max-width: 15rem;
   }
 }
 
