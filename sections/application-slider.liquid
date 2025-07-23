@@ -4,46 +4,10 @@
   <div class="application-slider__container">
     <div class="application-slider__two-sliders">
       <div class="application-slider__wrapper application-slider__wrapper--mobile">
-        <div thumbsSlider="" class="swiper application-slider__swiper-thumbnail">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="application-slider__slide-thumb">
-                <div class="application-slider__slide-thumb-circle">
-                  <span class="application-slider__slide-thumb-nubmer">01</span>
-                </div>
 
-                <div class="application-slider__slide-thumb-text">WASH</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="application-slider__slide-thumb">
-                 <div class="application-slider__slide-thumb-circle">
-                  <span class="application-slider__slide-thumb-nubmer">02</span>
-                </div>
+        <div class="application-slider__wrapper-place"></div>
 
-                <div class="application-slider__slide-thumb-text">WASH</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="application-slider__slide-thumb">
-                <div class="application-slider__slide-thumb-circle">
-                  <span class="application-slider__slide-thumb-nubmer">03</span>
-                </div>
-
-                <div class="application-slider__slide-thumb-text">WASH</div>
-              </div>
-            </div>
-             <div class="swiper-slide">
-              <div class="application-slider__slide-thumb">
-                <div class="application-slider__slide-thumb-circle">
-                  <span class="application-slider__slide-thumb-nubmer">04</span>
-                </div>
-
-                <div class="application-slider__slide-thumb-text">WASH</div>
-              </div>
-            </div>
-          </div>
-        </div>
+       
 
         <div class="swiper application-slider__swiper-image" data-da="application-slider__wrapper--desktop,first,1023">
           <div class="swiper-wrapper">
@@ -159,6 +123,47 @@
             </button>
           </div>
         </div>
+
+        <div data-da="application-slider__wrapper-place,first,1023" thumbsSlider="" class="swiper application-slider__swiper-thumbnail">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="application-slider__slide-thumb">
+                <div class="application-slider__slide-thumb-circle">
+                  <span class="application-slider__slide-thumb-nubmer">01</span>
+                </div>
+
+                <div class="application-slider__slide-thumb-text">WASH</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-slider__slide-thumb">
+                 <div class="application-slider__slide-thumb-circle">
+                  <span class="application-slider__slide-thumb-nubmer">02</span>
+                </div>
+
+                <div class="application-slider__slide-thumb-text">WASH</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-slider__slide-thumb">
+                <div class="application-slider__slide-thumb-circle">
+                  <span class="application-slider__slide-thumb-nubmer">03</span>
+                </div>
+
+                <div class="application-slider__slide-thumb-text">WASH</div>
+              </div>
+            </div>
+             <div class="swiper-slide">
+              <div class="application-slider__slide-thumb">
+                <div class="application-slider__slide-thumb-circle">
+                  <span class="application-slider__slide-thumb-nubmer">04</span>
+                </div>
+
+                <div class="application-slider__slide-thumb-text">WASH</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -170,22 +175,17 @@
   document.addEventListener('DOMContentLoaded', function () {
     const applicationSliderThumb = new Swiper('.application-slider__swiper-thumbnail', {
       spaceBetween: 10,
-      slidesPerView: 2,
+      slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
 
       breakpoints: {
-        490: {
-          slidesPerView: 4,
-        },
 
         1380: {
-          slidesPerView: 4,
           spaceBetween: 20,
         },
 
         1500: {
-          slidesPerView: 4,
           spaceBetween: 30,
         },
       },

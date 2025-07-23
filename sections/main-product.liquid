@@ -105,7 +105,43 @@
                       {{ product.title | escape }}
                     </h2>
                   </a>
-                </div>
+                </div> 
+
+                {% if product and product.handle == 'volufiline-100' %}
+                  <div class="product__upgrade">
+                    <div class="product__upgrade-top">
+                      <p>or 4 interest-free payments of $9.50 with afterpay</p>
+                    </div>
+
+                    <div class="product__upgrade-bottom">
+                      <p class="product__upgrade-title">UPGRADE YOUR ROUTINE</p>
+                      <div class="product__upgrade-wrapper">
+                        <div class="product__upgrade-content">
+                          <span class="product__upgrade-text"
+                            >BUY TWO <br>
+                            + <br>
+                            ONE FREE</span
+                          >
+                          <img
+                            src="{{ 'product-upgrade.png' | asset_url }}"
+                            width="100"
+                            height="117"
+                            alt="Volufiline product"
+                            loading="lazy"
+                          >
+                          <span class="product__upgrade-name">THE ULTIMATE GROWTH SET</span>
+                        </div>
+
+                        <a
+                          href="{{ routes.root_url }}products/the-ultimate-growth-set"
+                          class="product__upgrade-link button-dark"
+                          >ADD - $76‎<span>‎$114</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+                
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {% comment %}
@@ -199,7 +235,8 @@
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
-                {%- endif -%}
+              {%- endif -%}
+
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -465,41 +502,6 @@
                     show_pickup_availability: true
                   -%}
                 </div>
-
-                {% if product and product.handle == 'volufiline-100' %}
-                  <div class="product__upgrade">
-                    <div class="product__upgrade-top">
-                      <p>or 4 interest-free payments of $9.50 with afterpay</p>
-                    </div>
-
-                    <div class="product__upgrade-bottom">
-                      <p class="product__upgrade-title">UPGRADE YOUR ROUTINE</p>
-                      <div class="product__upgrade-wrapper">
-                        <div class="product__upgrade-content">
-                          <span class="product__upgrade-text"
-                            >BUY TWO <br>
-                            + <br>
-                            ONE FREE</span
-                          >
-                          <img
-                            src="{{ 'product-upgrade.png' | asset_url }}"
-                            width="100"
-                            height="117"
-                            alt="Volufiline product"
-                            loading="lazy"
-                          >
-                          <span class="product__upgrade-name">THE ULTIMATE GROWTH SET</span>
-                        </div>
-
-                        <a
-                          href="{{ routes.root_url }}products/the-ultimate-growth-set"
-                          class="product__upgrade-link button-dark"
-                          >ADD - $76‎<span>‎$114</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                {% endif %}
 
               {%- when 'popup' -%}
                 <modal-opener
