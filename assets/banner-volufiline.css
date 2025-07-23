@@ -427,6 +427,10 @@
   position: relative;
   margin-left: initial;
   margin-right: initial;
+
+  .banner-volufiline__link {
+    margin-left: initial;
+  }
 }
 
 .banner-volufiline__wrapper-marquee {
