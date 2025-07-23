@@ -21,7 +21,9 @@
         loading="lazy"
       >
 
-      <a href="#" class="button-dark banner-volufiline__banner-btn" >25% OFF TODAY</a>
+        {% assign product = all_products['volufiline-100'] %}
+
+      <a href="{{ product.url }}" class="button-dark banner-volufiline__banner-btn" >25% OFF TODAY</a>
     </div>
 
     <div class="banner-volufiline__content">

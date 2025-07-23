@@ -417,7 +417,7 @@
   .banner-volufiline__wrapper-marquee {
 
     .banner-volufiline__title {
-      max-width: initial;
+      max-width: 32rem;
     }
   }
 }
