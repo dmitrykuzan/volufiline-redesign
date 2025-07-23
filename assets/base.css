@@ -145,13 +145,13 @@ html {
 
 /* stars */
 
-.melatonic-rating-stars {
+.volufiline-rating-stars {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.melatonic-rating-star {
+.volufiline-rating-star {
   display: flex;
   align-items: center;
   justify-content: center;

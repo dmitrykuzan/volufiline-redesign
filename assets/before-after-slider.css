@@ -106,7 +106,6 @@
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   border-radius: 10rem;
 }
 
@@ -155,6 +154,7 @@
 .before-after-slider__link {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -220,7 +220,7 @@
     .hero__review {
       gap: 3rem;
 
-      .melatonic-rating-star {
+      .volufiline-rating-star {
         width: 3rem;
 
         svg {
@@ -244,10 +244,6 @@
     gap: 3rem;
     margin-top: 3rem;
     margin-bottom: initial;
-  }
-
-  .video-slider__navigation {
-    margin-bottom: 2rem;
   }
 
   .before-after-slider__btns {

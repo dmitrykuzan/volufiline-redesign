@@ -319,8 +319,8 @@
 .result-slider {
   margin-top: 2rem;
   
-  .melatonic-swiper-button-prev,
-  .melatonic-swiper-button-next {
+  .volufiline-swiper-button-prev,
+  .volufiline-swiper-button-next {
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -444,7 +444,7 @@
   .result-slider {
     margin-top: 2rem;
 
-    .melatonic-swiper-button-prev, .melatonic-swiper-button-next {
+    .volufiline-swiper-button-prev, .volufiline-swiper-button-next {
       width: 5rem;
       height: 5rem;
     }

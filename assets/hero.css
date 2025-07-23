@@ -108,7 +108,7 @@
   border-radius: 1.2rem;
   gap: 1rem;
 
-  .melatonic-rating-star {
+  .volufiline-rating-star {
     max-width: 1.5rem;
   }
 
@@ -157,11 +157,11 @@
     flex-direction: row;
     gap: 3rem;
 
-    .melatonic-rating-star {
+    .volufiline-rating-star {
       max-width: initial;
     }
 
-    .melatonic-rating-stars {
+    .volufiline-rating-stars {
       gap: 1rem;
     }
 

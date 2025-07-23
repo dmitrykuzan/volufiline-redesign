@@ -1,10 +1,10 @@
-{{ 'banner-melatonic.css' | asset_url | stylesheet_tag }}
+{{ 'banner-volufiline.css' | asset_url | stylesheet_tag }}
 
-<section class="banner-melatonic page-width">
-  <div class="banner-melatonic__wrapper">
-    <div class="banner-melatonic__image">
+<section class="banner-volufiline page-width">
+  <div class="banner-volufiline__wrapper">
+    <div class="banner-volufiline__image">
       <img
-        class="banner-melatonic-banner-logo"
+        class="banner-volufiline-banner-logo"
         src="{{ 'banner-logo.png' | asset_url }}"
         width="126"
         height="126"
@@ -13,25 +13,25 @@
       >
 
       <img
-        class="banner-melatonic__image-img"
-        src="{{ 'banner-melatonic-img.jpg' | asset_url }}"
+        class="banner-volufiline__image-img"
+        src="{{ 'banner-volufiline-img.jpg' | asset_url }}"
         width="880"
         height="660"
-        alt="Melatonic bottle"
+        alt="volufiline bottle"
         loading="lazy"
       >
 
-      <a href="#" class="button-dark banner-melatonic__banner-btn" >25% OFF TODAY</a>
+      <a href="#" class="button-dark banner-volufiline__banner-btn" >25% OFF TODAY</a>
     </div>
 
-    <div class="banner-melatonic__content">
-      <div class="banner-melatonic__text">
-        <h2 class="banner-melatonic__title">Volufiline 100%</h2>
-        <p class="banner-melatonic__price">
+    <div class="banner-volufiline__content">
+      <div class="banner-volufiline__text">
+        <h2 class="banner-volufiline__title">Volufiline 100%</h2>
+        <p class="banner-volufiline__price">
           Enhances volume and plumps skin
         </p>
       </div>
-      <div class="banner-melatonic__benefits">
+      <div class="banner-volufiline__benefits">
         <span>Volumize.</span>
         <span>Tighten.</span>
         <span>Restore.</span>
@@ -40,7 +40,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'product' and block.settings.product %}
           {% assign product = block.settings.product %}
-          <a class="banner-melatonic__link button-dark" href="{{ product.url }}">GRAB A BOTTLE</a>
+          <a class="banner-volufiline__link button-dark" href="{{ product.url }}">GRAB A BOTTLE</a>
         {% endif %}
       {% endfor %}
     </div>

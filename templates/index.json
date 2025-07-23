@@ -34,7 +34,7 @@
       }
     },
     "banner_melatonic_DVir6m": {
-      "type": "banner-melatonic",
+      "type": "banner-volufiline",
       "blocks": {
         "product_hicLhd": {
           "type": "product",
@@ -66,7 +66,7 @@
       "settings": {}
     },
     "banner_melatonic_marquee_3QjAwj": {
-      "type": "banner-melatonic__marquee",
+      "type": "banner-volufiline__marquee",
       "blocks": {
         "product_qJLzFq": {
           "type": "product",
@@ -154,7 +154,7 @@
       "settings": {}
     },
     "banner_melatonic_image_aqYLmV": {
-      "type": "banner-melatonic-image",
+      "type": "banner-volufiline-image",
       "blocks": {
         "product_98RDxh": {
           "type": "product",

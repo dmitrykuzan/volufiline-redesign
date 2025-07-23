@@ -1,13 +1,13 @@
-{{ 'banner-melatonic.css' | asset_url | stylesheet_tag }}
+{{ 'banner-volufiline.css' | asset_url | stylesheet_tag }}
 
-<section class="banner-melatonic-image page-width">
-  <div class="banner-melatonic-image__wrapper">
-    <div class="banner-melatonic-image__blur">
+<section class="banner-volufiline-image page-width">
+  <div class="banner-volufiline-image__wrapper">
+    <div class="banner-volufiline-image__blur">
       <span></span>
     </div>
 
-    <div class="banner-melatonic-image-content">
-      <div class="banner-melatonic-image-logo">
+    <div class="banner-volufiline-image-content">
+      <div class="banner-volufiline-image-logo">
         <svg width="567" height="101" viewBox="0 0 567 101" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M114.353 100.143C110.352 99.7811 106.577 98.781 103.132 97.143C94.1029 92.8496 87.8398 84.7629 85.4912 74.383C83.8558 67.1584 83.8558 58.0716 85.5086 51.1229C86.709 46.0536 88.6923 41.7775 91.6673 37.8462C92.9199 36.1737 96.295 32.8114 97.9999 31.5183C104.594 26.5524 112.614 24.3626 121.312 25.173C129.176 25.9145 135.996 29.1905 141.58 34.9323C144.294 37.7255 145.93 40.0705 147.687 43.7087C150.157 48.8469 151.288 54.0541 151.445 61.227C151.601 68.1412 150.888 73.4864 149.061 78.7281C148.278 80.9696 146.104 85.194 144.764 87.0734C143.251 89.177 139.371 93.0221 137.231 94.5222C135.248 95.9188 131.333 97.8844 129.054 98.6259C124.67 100.04 119.329 100.591 114.353 100.143ZM121.504 84.1594C127.262 82.9869 131.368 78.5556 133.125 71.6414C134.395 66.6411 134.447 58.9337 133.23 54.1403C131.89 48.8297 128.933 44.6053 125.053 42.45C121.156 40.2947 115.189 40.2084 111.083 42.2603C105.951 44.8122 102.993 49.6573 101.967 57.1405C101.636 59.6234 101.601 65.3652 101.897 67.6757C102.628 73.2277 104.228 77.1073 106.96 80.073C109.099 82.3662 111.274 83.5042 115.223 84.3663C116.232 84.5905 120.025 84.4698 121.504 84.1594Z" fill="white"/>
           <path d="M224.131 100.162C217.937 99.662 213.188 97.7136 209.761 94.2824C206.194 90.7304 203.985 85.9715 202.871 79.4884C202.593 77.8159 202.558 75.6778 202.523 52.297L202.454 26.8989H211.257H220.042V49.5727C220.042 72.3845 220.095 74.3329 220.669 76.6434C221.904 81.5057 225.401 83.6438 231.786 83.4024C234.5 83.299 236.379 82.9196 238.205 82.092C241.111 80.7816 243.094 78.8159 244.068 76.2296C245.06 73.5742 244.99 75.3847 245.095 50.1762L245.182 26.9851H253.967H262.753L262.805 62.6425L262.84 98.2826H254.402H245.965V94.7997V91.3167L244.19 93.1961C241.285 96.248 238.605 97.9723 234.969 99.1275C231.803 100.128 228.028 100.49 224.131 100.162Z" fill="white"/>
@@ -23,35 +23,35 @@
         </svg>
       </div>
 
-      <div class="banner-melatonic-image-text">
+      <div class="banner-volufiline-image-text">
         <h3>coming winter 2025 to</h3>
         <h2>SEFORA</h2>
 
         {% for block in section.blocks %}
           {% if block.type == 'product' and block.settings.product %}
             {% assign product = block.settings.product %}
-            <a class="banner-melatonic-image-link button-dark" href="{{ product.url }}">BUY VOLUFILINE Now</a>
+            <a class="banner-volufiline-image-link button-dark" href="{{ product.url }}">BUY VOLUFILINE Now</a>
           {% endif %}
         {% endfor %}
       </div>
     </div>
     
-    <div class="banner-melatonic-image__image">
+    <div class="banner-volufiline-image__image">
       <img
         src="{{ 'banner-only-image.jpg' | asset_url }}"
         width="1600"
         height="600"
-        alt="Melatonic banner"
+        alt="volufiline banner"
         loading="lazy"
       >
     </div>
 
-    <div class="banner-melatonic-image__image--mobile">
+    <div class="banner-volufiline-image__image--mobile">
       <img
         src="{{ 'banner-only-image-mobile.jpg' | asset_url }}"
         width="335"
         height="416"
-        alt="Melatonic banner"
+        alt="volufiline banner"
         loading="lazy"
       >
     </div>
@@ -60,8 +60,8 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const wrapper = document.querySelector('.banner-melatonic-image__wrapper');
-    const blur = document.querySelector('.banner-melatonic-image__blur');
+    const wrapper = document.querySelector('.banner-volufiline-image__wrapper');
+    const blur = document.querySelector('.banner-volufiline-image__blur');
 
     if (wrapper && blur) {
       wrapper.addEventListener('mouseenter', () => {
