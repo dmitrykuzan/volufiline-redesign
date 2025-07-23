@@ -185,4 +185,11 @@
 .volufiline-product-slider__image-big {
   display: flex;
   height: 100%;
+  aspect-ratio: 4/4;
+}
+
+@media screen and (min-width: 1023px) {
+  .volufiline-product-slider__image-big {
+    aspect-ratio: initial;
+  }
 }
