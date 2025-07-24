@@ -116,6 +116,17 @@
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 520px) {
+  .banner-volufiline__image {
+    height: 50rem;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .banner-volufiline__image {
+    height: 60rem;
+  }
+}
 
 @media screen and (min-width: 767px) {
   .banner-volufiline__banner-btn {
@@ -129,6 +140,12 @@
     flex-direction: row;
   }
 
+  .banner-volufiline__benefits {
+    span {
+      font-size: 5rem;
+    }
+  }
+
   .banner-volufiline__image {
     height: auto;
     width: 100%;
@@ -139,7 +156,7 @@
 
 @media screen and (min-width: 830px) {
    .banner-volufiline__image {
-    max-width: 42rem;
+    max-width: 34rem;
   }
 }
 
