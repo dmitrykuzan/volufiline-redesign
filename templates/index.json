@@ -140,28 +140,16 @@
     "review_slider_rwyybB": {
       "type": "review-slider",
       "blocks": {
-        "product_8rP7xj": {
-          "type": "product",
-          "settings": {
-            "product": "volufiline-100"
-          }
-        }
+       
       },
-      "block_order": [
-        "product_8rP7xj"
-      ],
+    
       "name": "Review Slider",
       "settings": {}
     },
     "banner_melatonic_image_aqYLmV": {
       "type": "banner-volufiline-image",
       "blocks": {
-        "product_98RDxh": {
-          "type": "product",
-          "settings": {
-            "product": "volufiline-100"
-          }
-        }
+       
       },
       "block_order": [
         "product_98RDxh"

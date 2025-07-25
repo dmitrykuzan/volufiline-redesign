@@ -242,118 +242,26 @@
     "custom_review_GfAPgy": {
       "type": "custom-review",
       "blocks": {
-        "list_item_igrTjp": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Ava",
-            "title_review": "Volufiline",
-            "review_date": "1 days ago",
-            "review_rating": 5,
-            "review_text": "<p>I’ve been dealing with hair thinning for a while, and after trying several products, I finally found one that actually made a difference. Within just a few weeks, I noticed less shedding in the shower and my hair started to feel fuller and healthier. It’s not a miracle overnight fix, but with consistent use, the results are noticeable and encouraging. If you’re struggling with thinning hair, this is definitely worth a try.</p>"
-          }
-        },
-        "list_item_yxc6Xm": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Liam",
-            "title_review": "Volufiline",
-            "review_date": "1 days ago",
-            "review_rating": 5,
-            "review_text": "<p>I’ve been dealing with hair thinning for a while, and after trying several products, I finally found one that actually made a difference. Within just a few weeks, I noticed less shedding in the shower and my hair started to feel fuller and healthier. It’s not a miracle overnight fix, but with consistent use, the results are noticeable and encouraging. If you’re struggling with thinning hair, this is definitely worth a try.</p>"
-          }
-        },
-        "list_item_JWE7N4": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Sophia",
-            "title_review": "Volufiline",
-            "review_date": "2 days ago",
-            "review_rating": 5,
-            "review_text": "<p>I have suffered from periodic hair loss primarily due to thryroid and perimenopause and have tried a multitude of products over the last 10 years. I have been using this product for about three months in conjuction with Nutrafol hair vitamins and have noticed a difference in the density and quality of my hair. I would recommend!</p>"
-          }
-        },
-        "list_item_taiAN9": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Ethan",
-            "title_review": "Volufiline",
-            "review_date": "3 days ago",
-            "review_rating": 5,
-            "review_text": "<p>I’ve been using this serum for a little over two months now, and I’m starting to see a real difference. My hair feels thicker at the roots and looks a bit fuller overall. It’s very easy to use — just a few drops at night, and it doesn’t leave my hair greasy or heavy. You definitely have to be consistent and patient with it.</p>"
-          }
-        },
-        "list_item_iFbLb4": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Isabella",
-            "title_review": "Volufiline",
-            "review_date": "3 days ago",
-            "review_rating": 4,
-            "review_text": "<p>I’ve been using this hair growth serum for a few weeks now, applying it consistently once a day. The texture is light, it doesn’t leave any greasy feeling, and it absorbs pretty quickly. I’ve noticed less shedding during brushing and my scalp feels healthier overall. It’s still early to see big changes, but I do think the roots look a bit fuller than before.</p>"
-          }
-        },
-        "list_item_H7JdMP": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Noah",
-            "title_review": "Volufiline",
-            "review_date": "3 days ago",
-            "review_rating": 5,
-            "review_text": "<p>I’ve got super sensitive skin and was worried, but no irritation at all. Easy to apply and smells really mild.</p>"
-          }
-        },
-        "list_item_BGhddG": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Maya",
-            "title_review": "Volufiline",
-            "review_date": "3 days ago",
-            "review_rating": 4,
-            "review_text": "<p>Delivery was quick and the results have been surprising. I have baby hairs coming back after years of thinning.</p>"
-          }
-        },
-        "list_item_hPUWcy": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Owen",
-            "title_review": "Volufiline",
-            "review_date": "4 days ago",
-            "review_rating": 5,
-            "review_text": "<p>Noticed a change in texture after 2 weeks. Hair looks less flat and feels stronger overall.</p>"
-          }
-        },
-        "list_item_CYDARr": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Layla",
-            "title_review": "Volufiline",
-            "review_date": "4 days ago",
-            "review_rating": 4,
-            "review_text": "<p>This actually works. My scalp doesn’t itch like it did with minoxidil, and my part line looks less wide.</p>"
-          }
-        },
-        "list_item_fwj6G7": {
-          "type": "list_item",
-          "settings": {
-            "name_customer": "Zoe",
-            "title_review": "Volufiline",
-            "review_date": "4 days ago",
-            "review_rating": 5,
-            "review_text": "<p>Didn’t expect much, but my shedding has cut down a lot. No greasy residue, which I appreciate.</p>"
-          }
-        }
+       
+      
+       
+  
+       
+       
+       
+       
+        
+        
       },
       "block_order": [
-        "list_item_igrTjp",
-        "list_item_yxc6Xm",
-        "list_item_JWE7N4",
-        "list_item_taiAN9",
-        "list_item_iFbLb4",
-        "list_item_H7JdMP",
-        "list_item_BGhddG",
-        "list_item_hPUWcy",
-        "list_item_CYDARr",
-        "list_item_fwj6G7"
+       
+      
+      
+       
+       
+      
+
+       
       ],
       "name": "Custom Review List",
       "settings": {}
