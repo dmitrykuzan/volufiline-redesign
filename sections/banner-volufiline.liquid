@@ -3,32 +3,32 @@
 <section class="banner-volufiline page-width">
   <div class="banner-volufiline__wrapper">
     <div class="banner-volufiline__image">
-      <img
+      {% comment %} <img
         class="banner-volufiline-banner-logo"
         src="{{ 'banner-logo.png' | asset_url }}"
         width="126"
         height="126"
         alt="banner logo"
         loading="lazy"
-      >
+      > {% endcomment %}
 
-      <img
+      {% comment %} <img
         class="banner-volufiline__image-img"
         src="{{ 'banner-volufiline-img.jpg' | asset_url }}"
         width="880"
         height="660"
         alt="volufiline bottle"
         loading="lazy"
-      >
+      > {% endcomment %}
 
-      <img
+      {% comment %} <img
         class="banner-volufiline__image-img-mobile"
         src="{{ 'banner-volufiline-img-mobile.jpg' | asset_url }}"
         width="2544"
         height="3393"
         alt="volufiline bottle"
         loading="lazy"
-      >
+      > {% endcomment %}
 
         {% assign product = all_products['volufiline-100'] %}
 
